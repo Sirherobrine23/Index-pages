@@ -35,8 +35,9 @@ This renders __Index of /__.
 ### How do I install it?
 
 ```
-tar -xf apindex-x.xx.tar.gz
-cp apindex-x.xx
+wget https://github.com/Sirherobrine23/Index-pages/archive/master.zip -O index.zip
+unzip index.zip -d index
+cd index
 cmake . -DCMAKE_INSTALL_PREFIX=/usr
 sudo make install
 ```
