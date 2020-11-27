@@ -114,7 +114,7 @@ class File:
         if self.isDir():
             fileSize = "-"
         else:
-            fileSize = str(math.floor(os.path.getsize(self.getPath()) / 1000)) + " kB"
+            fileSize = str(math.floor(os.path.getsize(self.getPath()) / 1024 / 1024)) + " MB"
         modifyTime = time.strftime('%d-%b-%Y %H:%M',
                         time.localtime(os.path.getmtime(self.getPath())))
 
